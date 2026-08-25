@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="theme-color"
+    content="#0b6e4f"
+  >
+
+  <meta
+    name="description"
+    content="IPS 1 School App - Official App Download"
+  >
+
+  <title>IPS 1 School App | Download</title>
+
+  <style>
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* =========================================================
+       BODY
+    ========================================================= */
+
+    body {
+      font-family:
+        Arial,
+        "Noto Sans Gujarati",
+        sans-serif;
+
+      min-height: 100vh;
+
+      background:
+        linear-gradient(
+          135deg,
+          #e8f8f2 0%,
+          #f7fbff 50%,
+          #eaf2ff 100%
+        );
+
+      color: #17352d;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 20px;
+    }
+
+    /* =========================================================
+       PAGE
+    ========================================================= */
+
+    .page {
+      width: 100%;
+      max-width: 560px;
+    }
+
+    /* =========================================================
+       MAIN CARD
+    ========================================================= */
+
+    .card {
+      background: rgba(255, 255, 255, 0.97);
+
+      border-radius: 28px;
+
+      padding: 34px 26px 28px;
+
+      text-align: center;
+
+      box-shadow:
+        0 18px 55px rgba(0, 0, 0, 0.12);
+
+      border:
+        1px solid rgba(
+          11,
+          110,
+          79,
+          0.10
+        );
+    }
+
+    /* =========================================================
+       LOGO
+    ========================================================= */
+
+    .logo-container {
+      width: 110px;
+      height: 110px;
+
+      margin: 0 auto 18px;
+
+      border-radius: 26px;
+
+      background: #ffffff;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      box-shadow:
+        0 8px 24px rgba(
+          0,
+          0,
+          0,
+          0.10
+        );
+
+      overflow: hidden;
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: contain;
+
+      padding: 8px;
+    }
+
+    /* =========================================================
+       SCHOOL NAME
+    ========================================================= */
+
+    .school-name {
+      color: #0b6e4f;
+
+      font-size: 15px;
+
+      font-weight: 700;
+
+      letter-spacing: 1px;
+
+      margin-bottom: 7px;
+    }
+
+    /* =========================================================
+       TITLE
+    ========================================================= */
+
+    h1 {
+      font-size: 30px;
+
+      line-height: 1.2;
+
+      color: #123f33;
+
+      margin-bottom: 12px;
+    }
+
+    /* =========================================================
+       SUBTITLE
+    ========================================================= */
+
+    .subtitle {
+      color: #61736d;
+
+      font-size: 15px;
+
+      line-height: 1.7;
+
+      margin-bottom: 22px;
+    }
+
+    /* =========================================================
+       VERSION BADGE
+    ========================================================= */
+
+    .version {
+      display: inline-block;
+
+      padding: 8px 15px;
+
+      border-radius: 999px;
+
+      background: #e7f6ef;
+
+      color: #0b6e4f;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      margin-bottom: 24px;
+    }
+
+    /* =========================================================
+       DOWNLOAD BUTTON
+    ========================================================= */
+
+    .download-button {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 11px;
+
+      width: 100%;
+
+      min-height: 60px;
+
+      border-radius: 17px;
+
+      background: #0b6e4f;
+
+      color: #ffffff;
+
+      text-decoration: none;
+
+      font-size: 18px;
+
+      font-weight: 700;
+
+      box-shadow:
+        0 10px 24px rgba(
+          11,
+          110,
+          79,
+          0.25
+        );
+
+      transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        background 0.18s ease;
+    }
+
+    .download-button:hover {
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 14px 30px rgba(
+          11,
+          110,
+          79,
+          0.30
+        );
+
+      background: #095c43;
+    }
+
+    .download-button:active {
+      transform: translateY(0);
+    }
+
+    .download-icon {
+      font-size: 24px;
+    }
+
+    /* =========================================================
+       APP INFORMATION
+    ========================================================= */
+
+    .info-box {
+      margin-top: 24px;
+
+      padding: 19px;
+
+      background: #f7faf9;
+
+      border-radius: 17px;
+
+      text-align: left;
+    }
+
+    .info-title {
+      font-weight: 700;
+
+      color: #174f40;
+
+      margin-bottom: 12px;
+
+      text-align: center;
+
+      font-size: 16px;
+    }
+
+    .info-box p {
+      color: #52635e;
+
+      font-size: 14px;
+
+      line-height: 1.65;
+
+      margin: 7px 0;
+    }
+
+    /* =========================================================
+       INSTALLATION STEPS
+    ========================================================= */
+
+    .steps {
+      margin-top: 22px;
+
+      text-align: left;
+    }
+
+    .steps h2 {
+      font-size: 17px;
+
+      color: #174f40;
+
+      margin-bottom: 13px;
+
+      text-align: center;
+    }
+
+    .step {
+      display: flex;
+
+      gap: 11px;
+
+      margin: 11px 0;
+
+      color: #52635e;
+
+      font-size: 14px;
+
+      line-height: 1.55;
+    }
+
+    .step-number {
+      min-width: 27px;
+
+      width: 27px;
+
+      height: 27px;
+
+      border-radius: 50%;
+
+      background: #dff3eb;
+
+      color: #0b6e4f;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-weight: 700;
+
+      font-size: 13px;
+    }
+
+    /* =========================================================
+       WARNING / NOTE
+    ========================================================= */
+
+    .note {
+      margin-top: 21px;
+
+      padding: 14px 15px;
+
+      border-radius: 14px;
+
+      background: #fff7df;
+
+      color: #725b1d;
+
+      font-size: 13px;
+
+      line-height: 1.6;
+
+      text-align: left;
+    }
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+      margin-top: 23px;
+
+      color: #81908b;
+
+      font-size: 12px;
+
+      line-height: 1.6;
+    }
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width: 420px) {
+
+      body {
+        padding: 13px;
+      }
+
+      .card {
+        padding:
+          28px 18px 24px;
+
+        border-radius: 23px;
+      }
+
+      .logo-container {
+        width: 96px;
+        height: 96px;
+        border-radius: 22px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .download-button {
+        min-height: 56px;
+        font-size: 17px;
+      }
+
+      .info-box {
+        padding: 16px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <main class="page">
+
+    <section class="card">
+
+      <!-- =====================================================
+           SCHOOL LOGO
+
+           IMPORTANT:
+           જો school_logo.png આ જ folderમાં હોય તો આ કામ કરશે.
+           જો logo ન હોય તો નીચેનું img કાઢી શકો છો.
+      ====================================================== -->
+
+      <div class="logo-container">
+
+        <img
+          src="school_logo.png"
+          alt="IPS 1 School Logo"
+          onerror="this.style.display='none'; this.parentElement.innerHTML='🏫';"
+        >
+
+      </div>
+
+
+      <!-- =====================================================
+           SCHOOL NAME
+      ====================================================== -->
+
+      <div class="school-name">
+        IPS 1 SCHOOL
+      </div>
+
+
+      <!-- =====================================================
+           MAIN TITLE
+      ====================================================== -->
+
+      <h1>
+        IPS 1 School App
+      </h1>
+
+
+      <!-- =====================================================
+           SUBTITLE
+      ====================================================== -->
+
+      <p class="subtitle">
+
+        શાળા સાથે જોડાયેલી જરૂરી માહિતી,
+        સેવાઓ અને અભ્યાસ સામગ્રી
+        હવે તમારા મોબાઇલમાં.
+
+      </p>
+
+
+      <!-- =====================================================
+           VERSION
+      ====================================================== -->
+
+      <div class="version">
+
+        Latest Version · 1.0.0
+
+      </div>
+
+
+      <!-- =====================================================
+           DOWNLOAD BUTTON
+
+           YOUR GOOGLE DRIVE FILE ID:
+           1i7jNlvbz-uK1DVfvKU3H9VqiwI_74uyN
+      ====================================================== -->
+
+      <a
+        class="download-button"
+        href="https://drive.google.com/uc?export=download&id=1i7jNlvbz-uK1DVfvKU3H9VqiwI_74uyN"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <span class="download-icon">
+          ⬇️
+        </span>
+
+        <span>
+          Download App
+        </span>
+
+      </a>
+
+
+      <!-- =====================================================
+           APP INFORMATION
+      ====================================================== -->
+
+      <div class="info-box">
+
+        <div class="info-title">
+          📱 App વિશે
+        </div>
+
+        <p>
+          • Android માટે IPS 1 School App
+        </p>
+
+        <p>
+          • Student, Teacher અને Admin માટે અલગ સુવિધાઓ
+        </p>
+
+        <p>
+          • App install કર્યા પછી શાળા દ્વારા આપવામાં આવેલ
+          ID અને Passwordથી Login કરો.
+        </p>
+
+      </div>
+
+
+      <!-- =====================================================
+           INSTALLATION STEPS
+      ====================================================== -->
+
+      <div class="steps">
+
+        <h2>
+          📥 App કેવી રીતે Install કરવી?
+        </h2>
+
+
+        <!-- STEP 1 -->
+
+        <div class="step">
+
+          <span class="step-number">
+            1
+          </span>
+
+          <span>
+            <b>Download App</b>
+            button દબાવો.
+          </span>
+
+        </div>
+
+
+        <!-- STEP 2 -->
+
+        <div class="step">
+
+          <span class="step-number">
+            2
+          </span>
+
+          <span>
+            APK download પૂર્ણ થાય
+            ત્યાં સુધી રાહ જુઓ.
+          </span>
+
+        </div>
+
+
+        <!-- STEP 3 -->
+
+        <div class="step">
+
+          <span class="step-number">
+            3
+          </span>
+
+          <span>
+            Download થયેલી APK file ખોલીને
+            <b>Install</b> દબાવો.
+          </span>
+
+        </div>
+
+
+        <!-- STEP 4 -->
+
+        <div class="step">
+
+          <span class="step-number">
+            4
+          </span>
+
+          <span>
+            App ખોલો અને શાળા દ્વારા આપવામાં આવેલ
+            <b>ID અને Password</b>થી Login કરો.
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- =====================================================
+           IMPORTANT NOTE
+      ====================================================== -->
+
+      <div class="note">
+
+        ⚠️ જો Android ફોન APK install કરવાની
+        permission માંગે, તો ફોનની security settingsમાં
+        જરૂરી permission આપીને ફરીથી APK install કરો.
+
+      </div>
+
+
+      <!-- =====================================================
+           FOOTER
+      ====================================================== -->
+
+      <footer>
+
+        © 2026 IPS 1 School App
+        <br>
+
+        Official App Download Page
+
+      </footer>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
